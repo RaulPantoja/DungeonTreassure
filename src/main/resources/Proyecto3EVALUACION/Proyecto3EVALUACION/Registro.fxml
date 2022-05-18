@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="628.0" style="-fx-background-color: #232d36;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Proyecto3EVALUACION.Proyecto3EVALUACION.RegistroController">
+   <children>
+      <AnchorPane prefHeight="675.0" prefWidth="150.0" style="-fx-background-color: orange;" />
+      <AnchorPane layoutX="478.0" prefHeight="675.0" prefWidth="150.0" style="-fx-background-color: orange;" />
+      <TextField fx:id="usernameTextField" layoutX="240.0" layoutY="196.0" promptText="Nombre de usuario" AnchorPane.topAnchor="196.0" />
+      <Label layoutX="263.0" layoutY="147.0" text="Nombre de usuario" textFill="WHITE" AnchorPane.topAnchor="147.0" />
+      <Label layoutX="284.0" layoutY="250.0" text="Contraseña" textFill="WHITE" AnchorPane.topAnchor="250.0" />
+      <PasswordField fx:id="enterPasswordField" layoutX="240.0" layoutY="313.0" promptText="Contraseña" AnchorPane.topAnchor="313.0" />
+      <Button fx:id="closeButton" layoutX="240.0" layoutY="482.0" mnemonicParsing="false" onAction="#mostrarMenuLogearse" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #E96300;" text="Iniciar sesion" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="registerButton" layoutX="240.0" layoutY="415.0" mnemonicParsing="false" onAction="#registrar" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #E96300;" text="Registrarse" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imageView" fitHeight="66.0" fitWidth="71.0" layoutX="290.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/user.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="mensajeLoginLabel" layoutX="240.0" layoutY="356.0" prefHeight="27.0" prefWidth="149.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="progressBar" layoutX="214.0" layoutY="563.0" prefWidth="200.0" progress="1.0" />
+      <Label layoutX="262.0" layoutY="609.0" text="Ya casi has acabado" textFill="WHITE" />
+   </children>
+</AnchorPane>

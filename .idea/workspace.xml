@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8a0b2a03-7b8e-4af5-98c8-fc8fc1fdd402" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiagramaProyecto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiagramaProyecto.ucls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/JugadorDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/UsuarioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/Collision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/Collision.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/CreacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/CreacionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/HUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/HUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/JuegoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/JuegoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/KeyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/RankingAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/RankingAddController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/RankingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/RankingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/RegistroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyecto3EVALUACION/Proyecto3EVALUACION/RegistroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ejecutable/Ejecutable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Partida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Partida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Proyecto3EVALUACION/Proyecto3EVALUACION/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Proyecto3EVALUACION/Proyecto3EVALUACION/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Proyecto3EVALUACION/Proyecto3EVALUACION/Registro.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Proyecto3EVALUACION/Proyecto3EVALUACION/Registro.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="29LeJdPNd7QZHH2ObUrSAewpupe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/eclipse/3Proyecto3EVALUACION"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a0b2a03-7b8e-4af5-98c8-fc8fc1fdd402" name="Changes" comment="" />
+      <created>1652896727327</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652896727327</updated>
+      <workItem from="1652896728228" duration="50000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

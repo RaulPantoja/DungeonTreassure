@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="628.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Proyecto3EVALUACION.Proyecto3EVALUACION.AcuerdoController">
+   <children>
+      <TextArea editable="false" layoutX="164.0" layoutY="213.0" prefHeight="282.0" prefWidth="300.0" text="ACUERDO DE LICENCIA DE USUARIO&#10;&#10;&#10;Este acuerdo de licencia de usuario final &#10;de software constituye un acuerdo legal &#10;entre usted y Delivery Tech. El uso del &#10;software provisto en este &#10;acuerdo (el “software”) constituye su &#10;aceptación de estos términos. &#10;Lea cuidadosamente antes de completar &#10;el proceso de instalación y utilizar el software. &#10;Si no está de acuerdo con los términos &#10;de este acuerdo, no instale y/o utilice &#10;este software. Al instalar, copiar, o utilizar &#10;el producto de software, usted acuerda &#10;los términos legales de este acuerdo.&#10;&#10;Delivery Tech garantiza una licencia para &#10;utilizar una copia de esta versión de &#10;software en una única computadora. &#10;“Usted” significa la empresa, entidad o &#10;individuo cuyos fondos son utilizados &#10;para pagar la licencia. “Uso” significa &#10;el almacenamiento, carga, instalación, &#10;ejecución o muestra del software. &#10;Usted no puede modificar el software &#10;o desactivar ningún control de licencia &#10;del software, excepto como parte &#10;interesada en la programación de &#10;funcionalidades del software. &#10;Esta licencia no es transferible a ningún&#10; otro sistema, otra empresa o individuo.&#10;&#10;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="239.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/license.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="checkBox" layoutX="283.0" layoutY="525.0" mnemonicParsing="false" onAction="#change" text="Aceptar" />
+      <Label fx:id="mensajeLoginLabel" layoutX="214.0" layoutY="559.0" prefHeight="17.0" prefWidth="200.0" />
+      <Button layoutX="281.0" layoutY="587.0" mnemonicParsing="false" onAction="#change" text="Siguiente" />
+      <ProgressBar fx:id="progressBar" layoutX="214.0" layoutY="636.0" prefWidth="200.0" progress="0.5" />
+   </children>
+</AnchorPane>

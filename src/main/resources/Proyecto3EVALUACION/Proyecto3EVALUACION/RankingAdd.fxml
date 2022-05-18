@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="976.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Proyecto3EVALUACION.Proyecto3EVALUACION.RankingAddController">
+   <children>
+      <TableView fx:id="table_jugadores" layoutX="200.0" layoutY="12.0" onMouseClicked="#cargarDatos" prefHeight="714.0" prefWidth="780.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="123.0" text="ID" />
+          <TableColumn fx:id="col_username" prefWidth="241.0" text="Nombre" />
+            <TableColumn fx:id="col_tiempo" prefWidth="187.0" text="Tiempo Record" />
+            <TableColumn fx:id="col_fecha" minWidth="0.0" prefWidth="227.0" text="Fecha" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutY="-6.0" prefHeight="733.0" prefWidth="200.0" style="-fx-background-color: #262334;">
+         <children>
+            <Button layoutX="45.0" layoutY="271.0" mnemonicParsing="false" onAction="#añadirJugador" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #59ff00;" text="Añadir">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="45.0" layoutY="339.0" mnemonicParsing="false" onAction="#editarJugador" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #00ffe1;" text="Actualizar">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="45.0" layoutY="402.0" mnemonicParsing="false" onAction="#eliminarJugador" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #ff4f42;" text="Eliminar">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="52.0" layoutY="474.0" mnemonicParsing="false" onAction="#mostrarMenuRanking" prefHeight="40.0" prefWidth="106.0" style="-fx-background-color: black;" text="Volver" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="23.0" onMouseClicked="#mostrarMenuRanking" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/flecha.png" />
+                     </image>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txt_username" layoutX="26.0" layoutY="67.0" promptText="Nombre de usuario" AnchorPane.topAnchor="50.0" />
+            <TextField fx:id="txt_tiempo" layoutX="26.0" layoutY="115.0" promptText="Tiempo Record" AnchorPane.topAnchor="100.0" />
+            <TextField fx:id="txt_fecha" layoutX="26.0" layoutY="171.0" promptText="Fecha" AnchorPane.topAnchor="150.0" />
+            <TextField fx:id="txt_id" layoutX="77.0" layoutY="230.0" prefHeight="25.0" prefWidth="47.0" promptText="ID" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
