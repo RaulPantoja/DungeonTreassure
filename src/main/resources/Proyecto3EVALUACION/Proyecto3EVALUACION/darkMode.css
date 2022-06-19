@@ -1,0 +1,10 @@
+.primary-color{
+	-fx-background-color: #383838;
+}
+.round-border{
+	-fx-background-radius: 100;
+}
+.button{
+	-fx-background-color: #fafafa;
+	-fx-text-fill:black;
+}

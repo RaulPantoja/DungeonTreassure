@@ -11,12 +11,13 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="976.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Proyecto3EVALUACION.Proyecto3EVALUACION.RankingController">
    <children>
-      <TableView fx:id="table_jugadores" layoutX="113.0" layoutY="60.0" prefHeight="653.0" prefWidth="855.0" stylesheets="@tableView.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="113.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="60.0">
+      <TableView fx:id="table_jugadores" layoutX="113.0" layoutY="60.0" prefHeight="653.0" prefWidth="830.0" stylesheets="@tableView.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="113.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="60.0">
         <columns>
-            <TableColumn fx:id="col_id" prefWidth="112.0" text="ID" />
-          <TableColumn fx:id="col_username" prefWidth="266.0" text="Jugador" />
-            <TableColumn fx:id="col_tiempo" prefWidth="272.0" text="Tiempo" />
-            <TableColumn fx:id="col_fecha" prefWidth="201.0" text="Fecha" />
+            <TableColumn fx:id="col_pID" prefWidth="112.0" text="PartidaID" />
+            <TableColumn fx:id="col_tiempo" prefWidth="120.0" text="Tiempo" />
+            <TableColumn fx:id="col_fecha" prefWidth="120.0" text="Fecha" />
+          <TableColumn fx:id="col_username" minWidth="0.0" prefWidth="270.0" text="Nombre" />
+            <TableColumn fx:id="col_uID" prefWidth="204.0" text="UsuarioID" />
         </columns>
       </TableView>
       <Button layoutX="392.0" layoutY="18.0" mnemonicParsing="false" onAction="#mostrarMenuRankingAdd" style="-fx-background-color: orange;" text="Añadirme al ranking">
@@ -158,5 +159,10 @@
             <Font name="System Bold Italic" size="17.0" />
          </font>
       </Text>
+      <Button layoutX="800.0" layoutY="18.0" mnemonicParsing="false" onAction="#mostrarMenuHistorial" style="-fx-background-color: orange;" text="HISTORIAL">
+         <font>
+            <Font name="Lucida Console" size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

@@ -1,0 +1,19 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹éÈ´
+K
+java:S1659#")Declare "pauseButton" on a separate line.(íáÆ¶ùÿÿÿÿ8ö»ûü0
+o
+java:S1450%"TRemove the "file1" field and declare it as a local variable in the relevant methods.(–í¼ıøÿÿÿÿ
+i
+java:S1450)"TRemove the "file2" field and declare it as a local variable in the relevant methods.(ééÎ
+v
+java:S1450-"TRemove the "file3" field and declare it as a local variable in the relevant methods.(º¤‚ğüÿÿÿÿ8¡ú•ı0
+k
+java:S1450&"URemove the "media1" field and declare it as a local variable in the relevant methods.(­êÜí
+p
+java:S1450*"URemove the "media2" field and declare it as a local variable in the relevant methods.(òÁŸüùÿÿÿÿ
+r
+java:S1450."URemove the "media3" field and declare it as a local variable in the relevant methods.(‘õˆŠ8¢ú•ı0
+>	java:S108`")Either remove or fill this block of code.(”ı¾
+N
+java:S1128"1Remove this unused import 'javafx.util.Duration'.(ç½®§8ƒ¿‹ı0

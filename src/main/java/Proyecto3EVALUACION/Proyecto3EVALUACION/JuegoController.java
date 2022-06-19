@@ -26,7 +26,7 @@ public class JuegoController extends JPanel implements Runnable,IJuegoController
 	public void mostrarMenuInicio(Event event) {
 	    try {
 
-	        Parent root = FXMLLoader.load(getClass().getResource("/EscenaMain.fxml"));
+	        Parent root = FXMLLoader.load(getClass().getResource("EscenaMain.fxml"));
 	        Scene scene = new Scene(root);
 	        Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 	        appStage.setScene(scene);

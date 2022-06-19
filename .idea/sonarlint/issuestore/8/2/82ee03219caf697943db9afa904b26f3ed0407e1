@@ -1,0 +1,10 @@
+
+k	java:S117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ñ„‰şÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò€‹ûûÿÿÿÿ
+o	java:S116"URename this field "partida_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡€„ûÿÿÿÿ
+^
+java:S1659"CDeclare "tiempo" and all following declarations on a separate line.(ÿ†‰üşÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(óÓ¸›şÿÿÿÿ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û›È
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò€‹ûûÿÿÿÿ

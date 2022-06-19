@@ -22,7 +22,7 @@ public class mysqlConexion {
 	private String password;
 	
 	
-	private mysqlConexion() {
+	public mysqlConexion() {
 		String driver="com.mysql.cj.jdbc.Driver";
 		String url="jdbc:mysql://localhost/ranking";
 		String usuario="root";

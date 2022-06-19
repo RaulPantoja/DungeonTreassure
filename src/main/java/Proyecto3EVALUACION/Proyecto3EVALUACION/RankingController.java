@@ -2,11 +2,14 @@ package Proyecto3EVALUACION.Proyecto3EVALUACION;
 
 import java.net.URL;
 
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.ResourceBundle;
 
+import DAO.PartidaDAO;
 import interfaces.IRankingController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -23,46 +26,45 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import model.Partida;
+import model.Usuario;
 
 public class RankingController implements IRankingController, Initializable {
 
+	
 	@FXML
-	private TableView<Partida> table_jugadores;
+	public TableView<Partida> table_jugadores;
+
+	
+	@FXML
+	public TableColumn<Partida,Integer> col_pID;
+	@FXML
+	public TableColumn<Partida, Integer> col_uID;
 
 	@FXML
-	private TableColumn<Partida, Integer> col_id;
+	public TableColumn<Partida, String> col_username;
 
 	@FXML
-	private TableColumn<Partida, String> col_username;
+	public TableColumn<Partida, String> col_tiempo;
 
 	@FXML
-	private TableColumn<Partida, String> col_tiempo;
-
-	@FXML
-	private TableColumn<Partida, String> col_fecha;
+	public TableColumn<Partida, String> col_fecha;
 
 	ObservableList<Partida> oblist = FXCollections.observableArrayList();
-
+	PartidaDAO pDAO = new PartidaDAO();
+	//
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
-
-		try {
-			Connection con = mysqlConexion.getConexion();
-			ResultSet rs = con.createStatement().executeQuery("SELECT * FROM partida ORDER BY tiempo ");
-
-			while (rs.next()) {
-				oblist.add(new Partida(rs.getInt("partida_id"), rs.getString("user"), rs.getString("tiempo"),
-						rs.getString("fecha")));
-			}
-
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		col_id.setCellValueFactory(new PropertyValueFactory<Partida, Integer>("partida_id"));
-		col_username.setCellValueFactory(new PropertyValueFactory<Partida, String>("user"));
+		
+		List jugadores=pDAO.getPartidas();
+		oblist.setAll(jugadores);
+		
+		col_pID.setCellValueFactory(new PropertyValueFactory<Partida,Integer>("partida_id"));
 		col_tiempo.setCellValueFactory(new PropertyValueFactory<Partida, String>("tiempo"));
 		col_fecha.setCellValueFactory(new PropertyValueFactory<Partida, String>("fecha"));
-
+		
+		col_username.setCellValueFactory(new PropertyValueFactory<Partida, String>("username"));
+		col_uID.setCellValueFactory(new PropertyValueFactory<Partida, Integer>("user_id"));
+		
 		table_jugadores.setItems(oblist);
 	}
 
@@ -80,10 +82,23 @@ public class RankingController implements IRankingController, Initializable {
 		}
 	}
 
+	public void mostrarMenuHistorial(Event event) {
+		try {
+
+			Parent root = FXMLLoader.load(getClass().getResource("Historial.fxml"));
+			Scene scene = new Scene(root);
+			Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+			appStage.setScene(scene);
+			appStage.toFront();
+			appStage.show();
+
+		} catch (Exception e) {
+		}
+	}
 	public void mostrarMenuInicio(Event event) {
 		try {
 
-			Parent root = FXMLLoader.load(getClass().getResource("/EscenaMain.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("EscenaMain.fxml"));
 			Scene scene = new Scene(root);
 			Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 			appStage.setScene(scene);

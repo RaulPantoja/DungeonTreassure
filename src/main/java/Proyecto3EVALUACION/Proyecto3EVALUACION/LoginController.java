@@ -1,5 +1,20 @@
 package Proyecto3EVALUACION.Proyecto3EVALUACION;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.net.URL;
+import java.util.*;
+import java.util.ResourceBundle;
+
+import DAO.UsuarioDAO;
+import javafx.event.ActionEvent;
+import javafx.event.Event;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -7,30 +22,13 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
-import java.io.File;
-import java.net.URL;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import java.util.ResourceBundle;
-
-import DAO.UsuarioDAO;
-import javafx.scene.image.ImageView;
-
-import javafx.event.ActionEvent;
-import javafx.event.Event;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import java.math.BigInteger;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 public class LoginController implements Initializable {
 
+	
 	@FXML
 	private Button cancelButton;
 	@FXML
@@ -40,11 +38,19 @@ public class LoginController implements Initializable {
 	@FXML
 	private ImageView lockImageView;
 	@FXML
-	private TextField usernameTextField;
+	TextField usernameTextField=new TextField("user");
 	@FXML
 	private PasswordField enterPasswordField;
 
 	UsuarioDAO uDAO = new UsuarioDAO();
+
+	String usuario=usernameTextField.getText();
+
+	private int user_id;
+	
+
+
+	
 
 	@Override
 	public void initialize(URL url, ResourceBundle res) {
@@ -57,17 +63,34 @@ public class LoginController implements Initializable {
 //		ImageView.setImage(image);
 	}
 
-	//Metodo asignado al boton logearse que lo que hace es comprbar si los campos estan vacios ejecutamos 
+	//Metodo asignado al boton logearse que lo que hace es comprobar si los campos estan vacios ejecutamos 
 	//el metodo validarLogin() y si no mostramos un mensaje en el Label de que introduzca los campos
 	public void loginButtonOnAction(ActionEvent event) {
 		// comprobamos si los campos no estan vacios
 		if (usernameTextField.getText().isBlank() == false && enterPasswordField.getText().isBlank() == false) {
-			validarLogin();
+		
+			user_id=validarLogin();
 
+			
+			Properties properties = new Properties();
+
+			properties.setProperty("user_id", String.valueOf(user_id));
+			try(FileWriter output = new FileWriter("config.properties")){
+			    properties.store(output, "");
+			} catch (IOException e) {
+			    e.printStackTrace();
+			}
+			
+//			p.setProperty("user_id", String.valueOf(user_id));
+			
 		} else {
 			mensajeLoginLabel.setText("Por favor introduce un nombre y una contraseña");
 		}
 	}
+	
+	
+
+	
 
 	//este metodo esta asignado al boton cancelar que cierra la aplicacion cuando se pulsa
 	public void cancelButtonOnAction(ActionEvent event) {
@@ -75,8 +98,9 @@ public class LoginController implements Initializable {
 		stage.close();
 	}
 
-	public void validarLogin() {
-		uDAO.validarLogin(mensajeLoginLabel, null, null, usernameTextField, enterPasswordField);
+	public int validarLogin() {
+		return uDAO.validarLogin(mensajeLoginLabel, null, null, usernameTextField, enterPasswordField);
+		
 	}
 
 	public void crearCuenta() {
@@ -105,5 +129,7 @@ public class LoginController implements Initializable {
 		} catch (Exception e) {
 		}
 	}
+	
+	
 
 }

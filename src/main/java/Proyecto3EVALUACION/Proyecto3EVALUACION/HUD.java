@@ -4,9 +4,13 @@ import java.awt.Graphics2D;
 import java.awt.Font;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.text.DecimalFormat;
+import java.util.Properties;
 import java.util.logging.Logger;
 
+import DAO.PartidaDAO;
 import DAO.UsuarioDAO;
 import interfaces.IHUD;
 import model.objeto.*;
@@ -35,7 +39,7 @@ public class HUD implements IHUD{
 	//queremos que el tiempo se muestre con este formato
 	DecimalFormat decimal = new DecimalFormat ("#0.00");
 	
-	
+	PartidaDAO pDAO = new PartidaDAO();
 	
 	public HUD(JuegoController gp) {
 		this.gp = gp;
@@ -78,6 +82,17 @@ public class HUD implements IHUD{
 			//esto sirve para para el hilo de ejecucion y acabar el juego
 			gp.gameThread = null;
 			LOG.info("El usuario ha acabado el juego con un tiempo de: "+tiempoJuego);
+			Properties properties = new Properties();
+
+			properties.setProperty("tiempoJuego", String.valueOf(tiempoJuego));
+			try(FileWriter output = new FileWriter("tiempo.properties")){
+			    properties.store(output, "");
+			    
+			} catch (IOException e) {
+			    e.printStackTrace();
+			}
+			pDAO.añadirJugador();
+			
 		// si el juego todavia no lo hemos acabado: 
 		}else {
 			//establecemos fuente del texto

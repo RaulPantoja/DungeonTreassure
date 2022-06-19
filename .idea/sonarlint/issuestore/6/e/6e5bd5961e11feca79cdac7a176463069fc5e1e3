@@ -1,0 +1,19 @@
+
+`	java:S112M"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+7
+java:S1643I"Use a StringBuilder instead.(¬Ô‹úÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ä”òª
+W
+java:S12262"AIntroduce a new variable instead of reusing the parameter "conn".(³ÉÜ¯
+[
+java:S12266"@Introduce a new variable instead of reusing the parameter "pst".(ÓŒÉÙøÿÿÿÿ
+]
+java:S2095f"GUse try-with-resources or close this "Statement" in a "finally" clause.(İè·
+j
+java:S20956"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÓŒÉÙøÿÿÿÿ
+@
+java:S1172["*Remove this unused method parameter "pst".(ÛßÂ¼
+V	java:S125`"<This block of commented-out lines of code should be removed.(²â‡Ìùÿÿÿÿ
+V	java:S125p"<This block of commented-out lines of code should be removed.(šıŸÄıÿÿÿÿ
+P
+java:S1128"5Remove this unused import 'javafx.event.ActionEvent'.(î•¯¼ıÿÿÿÿ

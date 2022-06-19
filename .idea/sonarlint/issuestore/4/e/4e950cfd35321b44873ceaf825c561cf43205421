@@ -1,0 +1,30 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹éÈ´
+n	java:S116("TRename this field "ImageView" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îˆÍ©ÿÿÿÿÿ
+V	java:S1256"<This block of commented-out lines of code should be removed.(ËÒĞæúÿÿÿÿ
+B
+java:S1172A",Remove this unused method parameter "event".(‘¿å
+=
+java:S1125C"'Remove the unnecessary boolean literal.(ò¤Â
+=
+java:S1125C"'Remove the unnecessary boolean literal.(ò¤Â
+G
+java:S1172L",Remove this unused method parameter "event".(ºÑÁÂøÿÿÿÿ
+>	java:S108l")Either remove or fill this block of code.(”ı¾
+K
+java:S1128
+"5Remove this unused import 'javafx.scene.image.Image'.(‰¿½Ç
+?
+java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å
+F
+java:S1128"0Remove this unused import 'java.sql.Connection'.(¥ËôÖ
+D
+java:S1128"/Remove this unused import 'java.sql.ResultSet'.(ˆóÚw
+E
+java:S1128"/Remove this unused import 'java.sql.Statement'.(ÏÖÔø
+G
+java:S1128"1Remove this unused import 'java.math.BigInteger'.(»Çâ€
+N
+java:S1128"8Remove this unused import 'java.security.MessageDigest'.(Œğ²»
+^
+java:S1128"CRemove this unused import 'java.security.NoSuchAlgorithmException'.(ŒòÍ¾şÿÿÿÿ

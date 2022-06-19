@@ -1,0 +1,40 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹éÈ´
+<
+java:S1659"&Declare "tileNum2" on a separate line.(ü ìÔ
+7	java:S131""Add a default case to this switch.(–„²À
+=
+java:S1125 "'Remove the unnecessary boolean literal.(©šñø
+=
+java:S1125 "'Remove the unnecessary boolean literal.(©šñø
+=
+java:S1125("'Remove the unnecessary boolean literal.(©šñø
+=
+java:S1125("'Remove the unnecessary boolean literal.(©šñø
+=
+java:S11250"'Remove the unnecessary boolean literal.(©šñø
+=
+java:S11250"'Remove the unnecessary boolean literal.(©šñø
+=
+java:S11258"'Remove the unnecessary boolean literal.(©šñø
+=
+java:S11258"'Remove the unnecessary boolean literal.(©šñø
+m
+java:S3776A"RRefactor this method to reduce its Cognitive Complexity from 62 to the 15 allowed.(¢Øß£ÿÿÿÿÿ
+7	java:S131L""Add a default case to this switch.(–„²À
+<
+java:S1125Q"'Remove the unnecessary boolean literal.(§ðçv
+B
+java:S1125T"'Remove the unnecessary boolean literal.(àÿÙáúÿÿÿÿ
+<
+java:S1125\"'Remove the unnecessary boolean literal.(§ðçv
+B
+java:S1125_"'Remove the unnecessary boolean literal.(àÿÙáúÿÿÿÿ
+<
+java:S1125g"'Remove the unnecessary boolean literal.(§ðçv
+B
+java:S1125j"'Remove the unnecessary boolean literal.(àÿÙáúÿÿÿÿ
+<
+java:S1125r"'Remove the unnecessary boolean literal.(§ðçv
+B
+java:S1125u"'Remove the unnecessary boolean literal.(àÿÙáúÿÿÿÿ

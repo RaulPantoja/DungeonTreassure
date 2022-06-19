@@ -9,7 +9,6 @@ import javafx.event.Event;
 public interface IRankingAddController {
 
 	void mostrarMenuRanking(Event event);
-	void añadirJugador();
 	void editarJugador();
 	void cargarDatos(MouseEvent event);
 	void eliminarJugador();

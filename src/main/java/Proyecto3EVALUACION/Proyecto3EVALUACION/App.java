@@ -9,8 +9,11 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
 import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
+
+import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.io.FileWriter;
 import java.io.IOException;
 
 import interfaces.IApp;
@@ -77,8 +80,23 @@ public class App extends Application implements IApp {
 		
 		//Si el usuario clicka el boton OK cerramos la ventana y mostramos un mensaje por consola.
 		if(alerta.showAndWait().get()==ButtonType.OK) {
-			System.out.println("Has cerrado sesion");
-			stage.close();
+		Properties properties = new Properties();
+		Properties properties2 = new Properties();
+		properties2.setProperty("tiempoJuego", String.valueOf(0));
+		properties.setProperty("user_id", String.valueOf("0"));
+		try(FileWriter output = new FileWriter("config.properties")){
+		    properties.store(output, "");
+		    
+		    FileWriter output2 = new FileWriter("tiempo.properties");
+		    properties2.store(output2, "");
+		    stage.close();
+		    System.out.println("Has cerrado sesion");
+		    
+		} catch (IOException e) {
+		    e.printStackTrace();
+		}
+			
+			
 		//Si el usuario clicka el boton cancel o pulsa la cruz de cerrar la ventana no hacemos nada
 		}else {
 			

@@ -1,0 +1,35 @@
+
+u
+java:S2293¾"YReplace the type specification in this constructor call with the diamond operator ("<>").(îˆöèûÿÿÿÿ
+p
+java:S2293¿"YReplace the type specification in this constructor call with the diamond operator ("<>").(åğê¸
+p
+java:S2293À"YReplace the type specification in this constructor call with the diamond operator ("<>").(Áİ·Ù
+u
+java:S2293Á"YReplace the type specification in this constructor call with the diamond operator ("<>").(äíûûÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹éÈ´
+c
+java:S2095´"GUse try-with-resources or close this "Statement" in a "finally" clause.(‹õè¦ùÿÿÿÿ
+t	java:S116&"ZRename this field "table_jugadores" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îİè€ùÿÿÿÿ
+f	java:S116)"QRename this field "col_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û›ÍÅ
+l	java:S116,"WRename this field "col_username" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¸õ€
+o	java:S116/"URename this field "col_tiempo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÇà›ıÿÿÿÿ
+n	java:S1162"TRename this field "col_fecha" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÓœ‚ùÿÿÿÿ
+q	java:S1165"WRename this field "txt_username" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÑ‹ùÿÿÿÿ
+i	java:S1168"TRename this field "txt_fecha" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê“©¶
+j	java:S116;"URename this field "txt_tiempo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó›©Ü
+e	java:S116>"QRename this field "txt_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—Ï
+a
+java:S1845ª"JRename field "log" to prevent any misunderstanding/clash with field "LOG".(ï©¯
+Q	java:S125U"<This block of commented-out lines of code should be removed.(ƒŠÄ¼
+a
+java:S1858‘"E"getCellData" returns a string, there's no need to call "toString()".(‡İ°›ûÿÿÿÿ
+a
+java:S1858’"E"getCellData" returns a string, there's no need to call "toString()".(¨®ëºøÿÿÿÿ
+\
+java:S1858“"E"getCellData" returns a string, there's no need to call "toString()".(€Îåà
+R
+java:S1117´"6Rename "rs" which hides the field declared at line 70.(‹õè¦ùÿÿÿÿ
+?	java:S108Ñ")Either remove or fill this block of code.(”ı¾
+J
+java:S1128"4Remove this unused import 'java.util.logging.Level'.(…µÛ¶

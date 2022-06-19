@@ -52,7 +52,7 @@ public class RegistroController implements Initializable {
 	}
 	public void registroButton(ActionEvent event) {
 		// comprobamos si los campos no estan vacios
-		if (usernameTextField.getText().isBlank() == false && enterPasswordField.getText().isBlank() == false) {
+		if (!usernameTextField.getText().equals("")&& !enterPasswordField.getText().equals("")) {
 			registrar();
 			LOG.info("Usuario Registrado");
 
